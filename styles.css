@@ -20,30 +20,23 @@
 
 @media screen and (max-width:767px) {  
     .sm-icon {
-        width: 10%;
+        width: 11%;
     }
 
     .headshot {
         width: 100%;
-        height: 100%;
     }
 
-    .my-skills-container h3 {
-        font-size: 1em;
+    h1, h2, h3, h4, p, label, ::placeholder {
+        scale: 80%;
     }
 
     .service-container-inner {
-        width: 2%;
-        display: block;
-        margin-left: 1%;
-        margin-top: 3%;
-        margin-bottom: 1%;}
+        scale: 60%;
+    }
 
-    .service-box {
-        width: 2%;
-        margin: 2px;
-        flex-basis: 300px;
-        transition: 400ms all ease;  
+    .icon-form > .sm-icon{
+        margin-left: -8%;
     }
 }
 
@@ -56,6 +49,7 @@ body {
     padding: 0;
     background: linear-gradient(var(--light-beige), var(--off-white-green), var(--off-white-blue));
 }
+
 
 header {
     width: 100%;

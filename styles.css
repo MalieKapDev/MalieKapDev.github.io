@@ -14,120 +14,23 @@
 
 @import url('https:fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
 
-@media screen and (min-width: 1024px) {
-    body {
-        font-family: 'Arial', sans-serif;
-        margin: 0;
-        padding: 0;
-        background: linear-gradient(var(--light-beige), var(--off-white-green), var(--off-white-blue));
+@media screen and (max-width:481px) {  
+    .header-container {
+        width: 20%;
     }
-    header {
-        width: 100%;
-        position: fixed;
-    }
-    nav {
-        font-size: 20px;
-        font-weight: 700;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 32px;
-        background: linear-gradient(var(--dark-blue), var(--primary-blue), var(--light-blue));
-        color: var(--primary-beige);
-        box-shadow: 5px 5px 50px var(--light-blue);
-    }
-    section {
-        margin: 0;
-        padding: 20px;
-        background: url("Web Background.png"), linear-gradient(var(--off-white-green), var(--off-white-blue), var(--light-beige));
-        background-size: cover;
-        background-position: center;
-    }
-    footer {
-        text-align: center;
-        padding: 1em 0;
-        background: linear-gradient(var(--dark-blue), var(--primary-blue), var(--light-blue));
-        color: var(--primary-beige);
-        box-shadow: 5px 5px 50px var(--light-blue);
+
+    .service-container-inner {
+        width: 20%;
     }
 }
 
-@media screen and (min-width: 767px) and (max-width: 1024px){
-    body {
-        font-family: 'Arial', sans-serif;
-        margin: 0;
-        padding: 0;
-        background: linear-gradient(var(--light-beige), var(--off-white-green), var(--off-white-blue));
-    }
-    header {
-        width: 100%;
-        position: fixed;
-    }
-    nav {
-        font-size: 20px;
-        font-weight: 700;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 32px;
-        background: linear-gradient(var(--dark-blue), var(--primary-blue), var(--light-blue));
-        color: var(--primary-beige);
-        box-shadow: 5px 5px 50px var(--light-blue);
-    }
-    section {
-        margin: 0;
-        padding: 20px;
-        background: url("Web Background.png"), linear-gradient(var(--off-white-green), var(--off-white-blue), var(--light-beige));
-        background-size: cover;
-        background-position: center;
-    }
-    footer {
-        text-align: center;
-        padding: 1em 0;
-        background: linear-gradient(var(--dark-blue), var(--primary-blue), var(--light-blue));
-        color: var(--primary-beige);
-        box-shadow: 5px 5px 50px var(--light-blue);
-    }
-}
-
-@media screen and (min-width: 767px) {
-    body {
-        font-family: 'Arial', sans-serif;
-        margin: 0;
-        padding: 0;
-        background: linear-gradient(var(--light-beige), var(--off-white-green), var(--off-white-blue));
-    }
-    header {
-        width: 100%;
-        position: fixed;
-    }
-    nav {
-        font-size: 20px;
-        font-weight: 700;
-        display: flex;
-        justify-content: space-between;
-        padding-top: 32px;
-        background: linear-gradient(var(--dark-blue), var(--primary-blue), var(--light-blue));
-        color: var(--primary-beige);
-        box-shadow: 5px 5px 50px var(--light-blue);
-    }
-    section {
-        margin: 0;
-        padding: 20px;
-        background: url("Web Background.png"), linear-gradient(var(--off-white-green), var(--off-white-blue), var(--light-beige));
-        background-size: cover;
-        background-position: center;
-    }
-    footer {
-        text-align: center;
-        padding: 1em 0;
-        background: linear-gradient(var(--dark-blue), var(--primary-blue), var(--light-blue));
-        color: var(--primary-beige);
-        box-shadow: 5px 5px 50px var(--light-blue);
-    }
+@media screen and (max-width:767px) {  
 }
 
 /* Style for basic tags */
 
 body {
+    width: 100%;
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
@@ -140,6 +43,7 @@ header {
 }
 
 nav {
+    width: 100%;
     font-size: 20px;
     font-weight: 700;
     display: flex;
@@ -151,6 +55,8 @@ nav {
 }
 
 section {
+    width: 100%;
+    position: static;
     margin: 0;
     padding: 20px;
     background: url("Web Background.png"), linear-gradient(var(--off-white-green), var(--off-white-blue), var(--light-beige));
@@ -159,6 +65,7 @@ section {
 }
 
 footer {
+    width: 100%;
     text-align: center;
     padding: 1em 0;
     background: linear-gradient(var(--dark-blue), var(--primary-blue), var(--light-blue));
@@ -169,6 +76,10 @@ footer {
 hr {
     width: 95%;
     border: 0.5px solid var(--dark-blue);
+}
+
+main {
+    width: 100%;
 }
 
 /* Style for the header menu */

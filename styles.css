@@ -50,7 +50,7 @@
     margin: 0 auto;
     text-align: center;
     padding: 1px 0;
-    flex-direction: column;
+    flex-direction: row;
   }
 }
 

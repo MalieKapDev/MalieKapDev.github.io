@@ -1,6 +1,6 @@
 let currentIndex = 0;
-const slides = document.querySelectorAll('.slide');
-const dots = document.querySelectorAll('.dot');
+const slides = document.querySelectorAll(".slide");
+const dots = document.querySelectorAll(".dot");
 const totalSlides = slides.length;
 
 function showSlide(index) {
@@ -82,7 +82,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 
     if (empty($message)) {
-        $errors[] = 'Message is empty' 
+        $errors[] = "Message is empty";
     }
 
     //If no errors, send email
@@ -103,11 +103,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         //Display errors 
         echo "The form contains the following errors:<br>";
         foreach($errors as $error) {
-            echo "- $error<br>";
+            echo("- $error<br>");
         }
     }
 } else {
     //Not a POST request, display a 403 forbidden error
     header("HTTP/1.1 403 Forbidden");
-    echo "You are not allowed to access this page."
+    echo("You are not allowed to access this page.");
 }

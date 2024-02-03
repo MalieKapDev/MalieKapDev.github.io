@@ -36,12 +36,6 @@
     display: flex;
     flex-direction: column;
   }
-
-  .email-form {
-    width: 95%;
-    margin: 0 auto;
-    flex-direction: column;
-  }
 }
 
 /* Style for basic tags */
